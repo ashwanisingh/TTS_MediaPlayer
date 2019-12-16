@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/color_home_widget_background">
+
+    <include layout="@layout/toolbar" />
+
+    <View style="@style/dividerStyle" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--start Accent Selection-->
+
+        <RelativeLayout
+            android:id="@+id/accentSelectionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/accentSelectionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Accent"
+                android:textColor="@color/color_static_text"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/accentSelectionVisibilityBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_arrow_right_wrapper"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/ttsAccentVal"
+                android:layout_below="@id/accentSelectionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="English (India)"
+                android:textColor="@color/text_warm_grey"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+        <!--end Accent Selection-->
+
+
+        <View
+            style="@style/dividerStyle"
+            android:layout_marginTop="10dp" />
+
+        <!--Start Speed Seekbar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/textToSpeechSpeedLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text="Speed"
+                        android:textColor="@color/color_static_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/ttsSpeedVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="100%"
+                        android:textColor="@color/text_warm_grey"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/speedVisibilityBtn"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:srcCompat="@drawable/ic_arrow_drop_down_wrapper" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/speedSeekbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="top"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/speedVal1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0.5x"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/text_warm_grey" />
+
+                    <TextView
+                        android:id="@+id/speedVal2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0.75x"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/text_warm_grey" />
+
+                    <TextView
+                        android:id="@+id/speedVal3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1x"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/text_warm_grey" />
+
+                    <TextView
+                        android:id="@+id/speedVal4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1.5x"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/text_warm_grey" />
+
+                    <TextView
+                        android:id="@+id/speedVal5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2x"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/text_warm_grey" />
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/speedDot1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/speed_seekbar_dot_height"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingStart="5dp"
+                            android:text="."
+                            android:textColor="@color/customise_tag_background"
+                            android:textSize="@dimen/speed_seekbar_dot_size" />
+
+                        <TextView
+                            android:id="@+id/speedDot2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/speed_seekbar_dot_height"
+                            android:layout_weight="1"
+                            android:paddingLeft="15dp"
+                            android:paddingStart="15dp"
+                            android:text="."
+                            android:textColor="@color/customise_tag_background"
+                            android:textSize="@dimen/speed_seekbar_dot_size" />
+
+                        <TextView
+                            android:id="@+id/speedDot3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/speed_seekbar_dot_height"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingStart="5dp"
+                            android:text="."
+                            android:textColor="@color/customise_tag_background"
+                            android:textSize="@dimen/speed_seekbar_dot_size" />
+
+                        <TextView
+                            android:id="@+id/speedDot4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/speed_seekbar_dot_height"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:paddingStart="5dp"
+                            android:text="."
+                            android:textColor="@color/customise_tag_background"
+                            android:textSize="@dimen/speed_seekbar_dot_size" />
+
+                        <TextView
+                            android:id="@+id/speedDot5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/speed_seekbar_dot_height"
+                            android:text="."
+                            android:textColor="@color/customise_tag_background"
+                            android:textSize="@dimen/speed_seekbar_dot_size" />
+
+                    </LinearLayout>
+
+
+                    <com.mbtechpro.tts.discreteSeekbar.DiscreteSeekBar
+                        android:id="@+id/speedSeekbar2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-10dp"
+                        android:layout_marginTop="@dimen/speed_seekbar_top_margin"
+                        app:dsb_indicatorColor="#006599"
+                        app:dsb_progressColor="#006599"
+                        app:dsb_rippleColor="#FF7788FF"
+                        app:dsb_indicatorFormatter="%d%%"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--End Speed Seekbar-->
+
+        <View
+            style="@style/dividerStyle"
+            android:layout_marginTop="5dp" />
+
+
+        <!--Start Pitch Seekbar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_pitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text="Pitch"
+                        android:textColor="@color/color_static_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/ttsPitchVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1x"
+                        android:textColor="@color/text_warm_grey"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/pitchVisibilityBtn"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:srcCompat="@drawable/ic_arrow_drop_down_wrapper" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/pitchSeekbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pitch_seekbar_top_margin"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingStart="5dp"
+                                android:text="."
+                                android:textColor="@color/customise_tag_background"
+                                android:textSize="@dimen/speed_seekbar_dot_size" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="."
+                                android:textColor="@color/customise_tag_background"
+                                android:textSize="@dimen/speed_seekbar_dot_size" />
+
+                        </LinearLayout>
+
+                        <com.mbtechpro.tts.discreteSeekbar.DiscreteSeekBar
+                            android:id="@+id/pitchSeekbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/pitch_seekbar_top_margin"
+                            android:layout_marginLeft="-10dp"
+                            android:layout_marginRight="-11dp"
+                            app:dsb_indicatorColor="#006599"
+                            app:dsb_floaterColor="#006599"
+                            app:dsb_progressColor="#006599"
+                            app:dsb_rippleColor="#FF7788FF"
+                            app:dsb_indicatorFormatter="%d%%"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--End Pitch Seekbar-->
+
+        <View
+            style="@style/dividerStyle"
+             />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TTS_MediaPlayer</string>
+    <string name="read_aloud">Read Aloud</string>
+</resources>

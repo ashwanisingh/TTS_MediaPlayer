@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/accentLanguageRowClick"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/selection"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/ic_radio_checked_wrapper"
+            android:scaleType="fitCenter"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text to Speech"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_static_text"
+            android:layout_weight="1"
+            />
+
+
+        <ImageView
+            android:id="@+id/download"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_file_download_wrapper"
+            />
+
+    </LinearLayout>

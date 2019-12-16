@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="@dimen/article_list_text_marginLeft"
+        android:paddingStart="@dimen/article_list_text_marginLeft"
+        android:text="Item 1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_static_text" />
+
+    <TextView
+        android:id="@+id/item2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="@dimen/article_list_text_marginLeft"
+        android:paddingStart="@dimen/article_list_text_marginLeft"
+        android:text="Item 2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_static_text" />
+
+    <TextView
+        android:id="@+id/item3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="@dimen/article_list_text_marginLeft"
+        android:paddingStart="@dimen/article_list_text_marginLeft"
+        android:text="Item 3"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_static_text" />
+
+    <TextView
+        android:id="@+id/item4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="@dimen/article_list_text_marginLeft"
+        android:paddingStart="@dimen/article_list_text_marginLeft"
+        android:text="Item 4"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_static_text" />
+
+    <TextView
+        android:id="@+id/item5"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="@dimen/article_list_text_marginLeft"
+        android:paddingStart="@dimen/article_list_text_marginLeft"
+        android:text="Item 5"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_static_text" />
+
+</LinearLayout>

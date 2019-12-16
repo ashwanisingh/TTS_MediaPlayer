@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="black_light">#3F4040</color>
+
+    <color name="gray">#949599</color>
+
+    <!--Banner -->
+    <color name="color_banner_text">#424242</color>
+    <color name="color_home_banner_background">#ffffff</color>
+
+    <!-- Explore -->
+    <color name="color_home_explore_background">#ffffff</color>
+    <color name="color_home_explore_border">#dbdbdb</color>
+
+    <!-- article listing-->
+    <color name="article_bottom_text_color">#818181</color>
+    <color name="article_list_text">#111111</color>
+    <color name="article_list_bottom">#52969696</color>
+    <color name="article_bg_color">#ffffff</color>
+
+
+    <!-- widgets -->
+    <color name="widget_viewall">#006599</color>
+    <color name="bottom_ads_top_strip_color">#000000</color>
+    <!--<color name="widget_opinion_selected">#90bed2</color>-->
+    <color name="widget_opinion_background">#133b5a</color>
+    <color name="widget_app_exclusive_background">#CF4939</color>
+    <!-- App Wise Colors-->
+    <color name="color_primary">#006599</color>
+    <color name="color_background">#ffffff</color>
+    <color name="color_primary_dark_black">#000000</color>
+
+    <!--<color name="text_peacock_blue">#006599</color>-->
+    <color name="text_peacock_blue">#000000</color>
+    <color name="text_peacock_blue_dummy">#006599</color>
+    <color name="customise_tag_background">#006599</color>
+    <color name="text_warm_grey">#818181</color>
+    <color name="search_hint">#818181</color>
+    <color name="text_black">#191919</color>
+    <color name="text_title_black">#111111</color>
+    <color name="color_flow_layout_reset">#adadad</color>
+    <color name="background_tab_pressed">#006599</color>
+    <color name="color_home_card_background">#fbfbfb</color>
+    <color name="color_home_widget_background">#ffffff</color>
+    <color name="text_caption_color">#6b6b6b</color>
+
+    <color name="color_black_theme">#191919</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="post_comment_color">#ededed</color>
+    <color name="section_strip_color">#80B2CC</color>
+
+    <!-- tab background-->
+    <color name="color_titlestrip_background">#ffffff</color>
+
+    <!-- Settings -->
+    <color name="color_settings_font">#191919</color>
+
+    <!-- customize fragments-->
+    <color name="color_custom_header_background">#f1f1f1</color>
+    <color name="color_custom_header_text">#424242</color>
+    <color name="color_flow_bg">#ffffff</color>
+    <color name="color_flow_font">#006599</color>
+    <color name="color_description_text_font">#233137</color>
+
+    <!-- home-->
+    <color name="color_drawer_text">#424242</color>
+    <color name="color_static_text">#191919</color>
+
+    <!-- Comment -->
+    <color name="color_comment_text">#282828</color>
+    <color name="color_comment_tint">#ededed</color>
+    <color name="color_comment_from">#006599</color>
+
+    <!--Cartoon section-->
+
+    <color name="feaded_blue">#6296c4</color>
+
+    <!-- search -->
+    <color name="search_title">#111111</color>
+    <color name="navigation_devider">#ededed</color>
+    <color name="notification_header_color">#fbfbfb</color>
+    <color name="divider_color">#c9c9c9</color>
+    <color name="BottomBackground">#FFFFFF</color>
+
+
+    <color name="divider_color_hori">#52969696</color>
+    <color name="customise_home_text_color">#02669a</color>
+    <color name="snackbar_title">#8a8a8a</color>
+
+
+    <!-- customize home screen and city screen new color -->
+    <color name="color_customize_item_normal_background">#F5F5F5</color>
+    <color name="color_customize_item_normal_outline_background">#F0F0F0</color>
+    <color name="color_customize_item_select_background">#006599</color>
+    <color name="color_customize_text_normal">#939393</color>
+    <color name="customise_text_color">#000000</color>
+    <color name="customise_screen_bottom_sticky">#ffffff</color>
+
+    <color name="notifier_read_articles">#80702121</color>
+
+    <color name="color_primary_dark">#01507A</color>
+
+
+    <color name="dsb_progress_color">#ff009688</color>
+    <color name="dsb_track_color">#ff939393</color>
+    <color name="dsb_disabled_color">#66939393</color>
+    <color name="dsb_ripple_color_pressed">#77939393</color>
+    <color name="dsb_ripple_color_focused">#99999999</color>
+
+</resources>
